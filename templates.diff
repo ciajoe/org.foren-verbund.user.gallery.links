@@ -1,0 +1,75 @@
+--- C:/Users/test/Desktop/Entwicklung/Meine Plug Ins/ForenVerbundGallerieLinks/userGalleryPhoto.tpl  Thu Jul 28 18:29:49 2011
++++ C:/Users/test/Desktop/Entwicklung/Meine Plug Ins/ForenVerbundGallerieLinks/userGallery_patch.tpl	Mon May 20 13:32:33 2013
+@@ -590,7 +590,65 @@
+ 								</div>
+ 							</div>
+ 						{/if}
++							<div class="contentBox galleryLinkBox">
++								<div class="border">
++									<div class="containerHead">
++										<h3>{lang}wcf.user.gallery.photo.zoom{/lang}</h3>
++									</div>
+ 						
++									<ul class="dataList">
++										<li class="{cycle values='container-1,container-2'}">
++											<div class="containerIcon">
++												<img src="{icon}embedImageM.png{/icon}" alt="" onclick="document.getElementById('userPhotoEmbed').select()" />
++											</div>
++											<div class="containerContent">
++												<h4 class="smallFont" onclick="document.getElementById('userPhotoEmbed').select()">{lang}wcf.user.gallery.photo.size.quadratic{/lang}({@$photo->getQuadraticWidth()}x{@$photo->getQuadraticHeight()})</h4>
++												<p><input type="text" class="inputText" id="userPhotoEmbed" readonly="readonly" onclick="this.select()" value="{PAGE_URL}/{$photo->getPhoto('quadratic')}" /></p>
++											</div>
++										<li class="{cycle values='container-1,container-2'}">
++											<div class="containerIcon">
++												<img src="{icon}embedImageM.png{/icon}" alt="" onclick="document.getElementById('userPhotoEmbed').select()" />
++											</div>
++											<div class="containerContent">
++												<h4 class="smallFont" onclick="document.getElementById('userPhotoEmbed').select()">{lang}wcf.user.gallery.photo.size.tiny{/lang}({@$photo->getTinyWidth()}x{@$photo->getTinyHeight()})</h4>
++												<p><input type="text" class="inputText" id="userPhotoEmbed" readonly="readonly" onclick="this.select()" value="{PAGE_URL}/{$photo->getPhoto('tiny')}" /></p>
++											</div>
++										<li class="{cycle values='container-1,container-2'}">
++											<div class="containerIcon">
++												<img src="{icon}embedImageM.png{/icon}" alt="" onclick="document.getElementById('userPhotoEmbed').select()" />
++											</div>
++											<div class="containerContent">
++												<h4 class="smallFont" onclick="document.getElementById('userPhotoEmbed').select()">{lang}wcf.user.gallery.photo.size.small{/lang}({@$photo->getSmallWidth()}x{@$photo->getSmallHeight()})</h4>
++												<p><input type="text" class="inputText" id="userPhotoEmbed" readonly="readonly" onclick="this.select()" value="{PAGE_URL}/{$photo->getPhoto('small')}" /></p>
++											</div>
++										<li class="{cycle values='container-1,container-2'}">
++											<div class="containerIcon">
++												<img src="{icon}embedImageM.png{/icon}" alt="" onclick="document.getElementById('userPhotoEmbed').select()" />
++											</div>
++											<div class="containerContent">
++												<h4 class="smallFont" onclick="document.getElementById('userPhotoEmbed').select()">{lang}wcf.user.gallery.photo.size.medium{/lang}({@$photo->getMediumWidth()}x{@$photo->getMediumHeight()})</h4>
++												<p><input type="text" class="inputText" id="userPhotoEmbed" readonly="readonly" onclick="this.select()" value="{PAGE_URL}/{$photo->getPhoto('medium')}" /></p>
++											</div>
++										<li class="{cycle values='container-1,container-2'}">
++											<div class="containerIcon">
++												<img src="{icon}embedImageM.png{/icon}" alt="" onclick="document.getElementById('userPhotoEmbed').select()" />
++											</div>
++											<div class="containerContent">
++												<h4 class="smallFont" onclick="document.getElementById('userPhotoEmbed').select()">{lang}wcf.user.gallery.photo.size.large{/lang}({@$photo->getLargeWidth()}x{@$photo->getLargeHeight()})</h4>
++												<p><input type="text" class="inputText" id="userPhotoEmbed" readonly="readonly" onclick="this.select()" value="{PAGE_URL}/{$photo->getPhoto('large')}" /></p>
++											</div>
++										<li class="{cycle values='container-1,container-2'}">
++											<div class="containerIcon">
++												<img src="{icon}embedImageM.png{/icon}" alt="" onclick="document.getElementById('userPhotoEmbed').select()" />
++											</div>
++											<div class="containerContent">
++												<h4 class="smallFont" onclick="document.getElementById('userPhotoEmbed').select()">{lang}wcf.user.gallery.photo.size.original{/lang}({@$photo->width}x{@$photo->height})</h4>
++												<p><input type="text" class="inputText" id="userPhotoEmbed" readonly="readonly" onclick="this.select()" value="{PAGE_URL}/{$photo->getPhoto()}" /></p>
++											</div>
++										</li>
++									</ul>
++								</div>
++							</div>					
+ 						{if $additionalContent3|isset}{@$additionalContent3}{/if}
+ 					</div>
+ 				</div>
+@@ -601,4 +659,4 @@
+ 
+ {include file='footer' sandbox=false}
+ </body>
+-</html>
++</html>
+\ No newline at end of file
