@@ -5,7 +5,7 @@
 		<packagename language="de"><![CDATA[Bilddirektlinks]]></packagename>
 		<packagedescription language="en"><![CDATA[Provides links to different versions of the image in a box]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Stellt die Links zu unterschiedlichen Bildversionen einfach in einer Box zur Verfügung]]></packagedescription>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 		<date>2013-05-15</date>
 		<isunique>1</isunique>
 		<plugin>com.woltlab.wcf.user.gallery</plugin>
