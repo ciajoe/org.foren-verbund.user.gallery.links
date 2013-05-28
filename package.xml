@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package name="org.foren-verbund.user.gallery.links" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/package.xsd">
- 	<packageinformation>
-		<packagename>Bilddirektlinks</packagename>
-		<packagedescription><![CDATA[Stellt die Links zu unterschiedlichen Bildversionen einfach in einer Box zur Verfügung]]></packagedescription>
+	<packageinformation>
+		<packagename language="en"><![CDATA[Direct image links]]></packagename>
+		<packagename language="de"><![CDATA[Bilddirektlinks]]></packagename>
+		<packagedescription language="en"><![CDATA[Provides links to different versions of the image in a box]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Stellt die Links zu unterschiedlichen Bildversionen einfach in einer Box zur Verfügung]]></packagedescription>
 		<version>1.0.0</version>
 		<date>2013-05-15</date>
 		<isunique>1</isunique>
@@ -20,8 +22,7 @@
 	</requiredpackages>
 
 	<instructions type="install">
-		<!-- files -->
-		<templates>templates.tar</templates>
+		<!-- DIFF file-->
 		<templatepatch>templates.diff</templatepatch>
 	
 	</instructions>
